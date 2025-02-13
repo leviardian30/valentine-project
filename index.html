@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine's Day Awaa!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="custom-modal" id="customModal">
+        <div id="modalContent"></div>
+      </div>
+      <h1>Selamat Hari Valentine, Aku Punya Hadiah Buat Kamu! 💖</h1>
+      <div class="button-container">
+        <button class="btn" id="btnYes">Buka Hadiah</button>
+        <button class="btn" id="btnNo">Nggak Mau</button>
+      </div>
+      <div class="message" id="message">
+        <div class="hearts" id="hearts"></div>
+      </div>
+
+      <button class="gallery-trigger" onclick="showGallery()">
+        <span class="emoji">🖼️✨</span>
+        <span>Lihat Galeri Kita</span>
+      </button>
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="gallery-item">
+        <img
+          src="img/foto (1).jpg"
+          alt="Foto Kenangan 1"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="img/foto (2).jpg"
+          alt="Foto Kenangan 2"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="img/foto (3).jpg"
+          alt="Foto Kenangan 3"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="img/foto (4).jpg"
+          alt="Foto Kenangan 4"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="img/foto (5).jpg"
+          alt="Foto Kenangan 5"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="img/foto (6).jpg"
+          alt="Foto Kenangan 6"
+          onclick="openModal(this.src)"
+        />
+      </div>
+    </div>
+    <div class="photo-modal" id="photoModal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
