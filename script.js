@@ -139,7 +139,7 @@ const questions = [
   },
   {
     text: "Apa warna favorit kamu? 🌈",
-    placeholder: "Akan aku jadikan warna khusus!",
+    placeholder: "Warnanya dalam bahasa inggris ya!!",
     emoji: "🎨",
   },
 ];
